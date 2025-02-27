@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --swiper-navigation-size: 44px;
+  --swiper-theme-color: #007aff;
+  --theta-red: #ec393b;
+  --black: #0e212b;
+  --white: white;
+  --smoke: #f8f5f5;
+  --theta-red-darker: #cf2c2d;
+  --theta-teal: #0697b5;
+  --black-3: #091820;
+  --black-2: #181d20;
+  --maroon: #501213;
+  --silver: #b2b7ba;
+  --black-4: #09161d;
+  --hf-chatbox-bgcolor: #ffffff;
+  --hf-brand-color: #fa6d4b;
+  --hf-brand-text-color: #ffffff;
+  --hf-brand-text-color-rgb: 255, 255, 255;
+  --hf-watermark-color: #dbdee1;
+  --hf-header-height: 59px;
+  --hf-chatbox-height: 560px;
+  --hf-suggestedaction-height: 40px;
+  --hf-watermark-height: 25px;
+  --hf-inputbox-height: 50px;
+  --hf-bot-msg-icon-width: 32px;
+  --hf-bot-msg-color: rgb(51, 51, 51);
+  --hf-bot-msg-bgcolor: rgb(241, 241, 241);
+  --hf-bot-msg-link-color: #660093;
+  --hf-bot-msg-btn-color: #660093;
+  --hf-bot-msg-btn-bgcolor: white;
+  --hf-btn-neutral-color: #120F8D;
+  --hf-btn-neutral-bgcolor: white;
+  --hf-callout-msg-link-color: #660093;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+  color: var(--black);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1;
+}
