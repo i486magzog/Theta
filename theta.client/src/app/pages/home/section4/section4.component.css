@@ -1,0 +1,98 @@
+section {
+  width: 100%;
+  z-index: 5;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 14;
+}
+
+.container {
+  max-width: 1920px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 1em;
+  position: relative;
+  margin: 0 auto;
+}
+
+.outline-text {
+  transform: translate3d(0px, -2.072%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  top: -155px;
+  opacity: .3;
+  left: -3px;
+  font-weight: bold;
+  user-select: none !important;
+  pointer-events: none !important;
+  position: absolute;
+  background-color: #0000;
+}
+
+.text {
+  opacity: 1;
+  font-size: 13rem;
+  font-weight: 900;
+}
+
+.overlap-holder {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+}
+
+.overlap-content {
+  transform: translate3d(0px, -0.518%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  padding: 2.5rem;
+  z-index: 2;
+  margin-right: -3rem;
+  position: relative;
+  background-color: var(--white);
+  border-radius: 2rem;
+  flex: 1;
+  box-shadow: 0 4px 36px #0e212b0d;
+  text-align: left;
+}
+
+  .overlap-content h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  .overlap-content p {
+    margin-top: 2rem;
+    opacity: .85;
+    margin-bottom: 10px;
+    font-family: proxima-nova, sans-serif;
+    line-height: 1.45;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+
+.overlap-image-holder {
+  z-index: 50;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0 50%;
+  position: relative;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+img.home-gen-ai {
+  width: 100%;
+  max-width: 440px;
+  border: 0;
+}

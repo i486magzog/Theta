@@ -1,0 +1,198 @@
+<div class="hero-container">
+  <!-- background video -->
+  <div class="bg-video">
+    <video autoplay loop style='background-image:url("https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/62aa94a8ff6ad55f3dc7c326_Theta Recruitment - Minified_-poster-00001.jpg")' muted playsinline data-wf-ignore="true" data-object-fit="cover">
+      <source src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/62aa94a8ff6ad55f3dc7c326_Theta Recruitment - Minified_-transcode.mp4" data-wf-ignore="true">
+      <source src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/62aa94a8ff6ad55f3dc7c326_Theta Recruitment - Minified_-transcode.webm" data-wf-ignore="true">
+    </video>
+  </div>
+
+  <div class="hero-overay"></div>
+
+  <div class="hero-content">
+    <img src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/60fe1f257a5ef553ebcc68c8_logo-outline.svg" loading="eager" data-w-id="78adb996-8834-3f9e-6748-2b17f61bc296"
+         alt=""
+         class="hero-logo-outline"
+         style="will-change: transform; transform: translate3d(49.976px, -49.032px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" />
+
+    <div class="outline-text white-outline hero-est-text">
+      <div class="display-2">est.</div>
+      <div class="display-xl">1995</div>
+    </div>
+
+    <a href="#Solutions" class="scroll-cta">
+      <img class="scroll-mouse" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/60ff41297ee737cfae08d25b_hero-scroll.svg" >
+    </a>
+
+    <!-- Left Text Content -->
+    <div class="container">
+
+      <div class="hero-left">
+        <div class="left-container">
+          <h1 class="hero-title">
+            Intelligence.
+            <span style="color:var(--theta-red);">Innovation.</span>
+            Insight.
+          </h1>
+
+          <div class="btn-container">
+            <div class="block">
+              <a class="btn-play">
+                <div class="btn-content">
+                  <div class="icon btn-icon"></div>
+                  <div class="btn-text">Play video</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="block">
+              <a class="btn-get-in-touch">
+                <div class="btn-content">
+                  <div class="btn-text">Get in touch</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="social">
+            <div class="social-links">
+              <a href="https://www.facebook.com/thetasystems" target="_blank" class="link facebook">
+                <div class="icon"></div>
+              </a>
+              <a href="https://twitter.com/ThetaNet" target="_blank" class="link">
+                <div class="icon"></div>
+              </a>
+              <a href="https://www.linkedin.com/company/theta-nz" target="_blank" class="link">
+                <div class="icon"></div>
+              </a>
+            </div>
+            <p class="text">We help organisations transform with technology.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Slids -->
+      <div class="hero-right">
+        <div class="swiper-holder">
+
+          <div class="swiper-controls">
+            <div class="swiper-control" (click)="goPrev()">
+              <div class="icon swiper-control-icon"></div>
+            </div>
+            <div class="swiper-control" (click)="goNext()">
+              <div class="icon control-icon"></div>
+            </div>
+          </div>
+
+          <div class="hero-dots"></div>
+          <div class="hero-swiper-frame"></div>
+
+          <swiper-container #swiper slides-per-view="3" space-between="0" centerd-slides="false" loop="false">
+
+            <!--<div class="swiper-wrapper">-->
+
+            <swiper-slide>
+              <a href="/about/overview" class="card">
+                <img class="hero-card-img" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/64d2dcecdf7c4de42a217417_whoarewe1.jpg">
+                <div class="hero-card-underlay black"></div>
+                <div class="hero-card-content">
+                  <div class="outline-text">
+                    <div class="display">About</div>
+                  </div>
+                  <h3 class="card-title">Who<br>we are</h3>
+                  <div class="arrow-holder">
+                    <div class="icon arrow-icon"></div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="/solutions/all" class="card">
+                <img class="hero-card-img" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/61a5675377ff7d8854449790_what-we-do.jpg">
+                <div class="hero-card-underlay red"></div>
+                <div class="hero-card-content">
+                  <div class="outline-text">
+                    <div class="display">Solutions</div>
+                  </div>
+                  <h3 class="card-title">What <br>we do</h3>
+                  <div class="arrow-holder">
+                    <div class="icon arrow-icon"></div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="/technologies/our-products" class="card">
+                <img class="hero-card-img" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/61a566b3528725d7f58cb719_our%20products.jpg">
+                <div class="hero-card-underlay teal"></div>
+                <div class="hero-card-content">
+                  <div class="outline-text">
+                    <div class="display">Products</div>
+                  </div>
+                  <h3 class="card-title">Our<br>products</h3>
+                  <div class="arrow-holder">
+                    <div class="icon arrow-icon"></div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="/technologies/we-work-with" class="card">
+                <img class="hero-card-img" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/61a567b37fc055b233b45266_60fe2e9c41780d1462792137_hands.jpg">
+                <div class="hero-card-underlay teal2"></div>
+                <div class="hero-card-content">
+                  <div class="outline-text">
+                    <div class="display">Technologies</div>
+                  </div>
+                  <h3 class="card-title">We<br>work with</h3>
+                  <div class="arrow-holder">
+                    <div class="icon arrow-icon"></div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="/customers/case-studies" class="card">
+                <img class="hero-card-img" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/61a567f085db5723a5c8efbf_60fe2e7d42d409619e2e6a32_watches.jpg">
+                <div class="hero-card-underlay red2"></div>
+                <div class="hero-card-content">
+                  <div class="outline-text">
+                    <div class="display">Our<br>Work</div>
+                  </div>
+                  <h3 class="card-title">Case<br>studies</h3>
+                  <div class="arrow-holder">
+                    <div class="icon arrow-icon"></div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="/customers/all-customers" class="card">
+                <img class="hero-card-img" src="https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/617b345b981908f15624bb14_D365-OG.jpg">
+                <div class="hero-card-underlay teal"></div>
+                <div class="hero-card-content">
+                  <div class="outline-text">
+                    <div class="display">Clients</div>
+                  </div>
+                  <h3 class="card-title">Our<br>customers</h3>
+                  <div class="arrow-holder">
+                    <div class="icon arrow-icon"></div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <!--</div>-->
+          </swiper-container>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

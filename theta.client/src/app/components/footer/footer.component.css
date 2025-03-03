@@ -1,0 +1,128 @@
+.footer {
+  height: 381px;
+  width: 100%;
+  background: var(--black);
+  font-size: 18px;
+}
+
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1920px;
+    align-items: center;
+    padding: 5rem 200px;
+  }
+
+    .col1 {
+      height: 100%;
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 2rem;
+      padding-right: 48px;
+    }
+      .col1 .moto {
+        font-size: 19px;
+        color: var(--white);
+        opacity: 0.85;
+      }
+
+.col2 {
+  height: 100%;
+  width: 41%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 3rem;
+  text-align: left;
+  padding: 0 10px;
+}
+  .col2 li {
+    
+  }
+    .col2 li:nth-child(2n+1) {
+      margin-bottom: 5px;
+      opacity: 0.85;
+      line-height: 1.45;
+    }
+
+    .col2 li:nth-child(2n) {
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+
+.col3 {
+  height: 100%;
+  width: 26%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 3rem;
+  text-align: left;
+  padding: 0 10px;
+}
+  .col3 li {
+    margin-bottom: 1rem;
+  }
+
+.brand {
+  width: 160px;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.red-link {
+  color: var(--theta-red);
+  font-weight: 900;
+  text-decoration: none;
+  transition: color .2s, opacity .2s;
+}
+
+.red-link:hover {
+  color: var(--theta-red-dark);
+  opacity: 0.8;
+}
+
+li img {
+  width: 100px;
+  height: 100px;
+}
+
+#myChatButton {
+  right: 2vw;
+  position: fixed;
+  color: #2d4a77;
+  text-align: center;
+  z-index: 999;
+  transition: all .8s;
+  bottom: 2vh;
+  right: 2vw;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  animation: hf-show-chatButton-animate 1s linear;
+}
+  #myChatButton span {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-image: url(https://storage.faqbot.nz/prod/731c7at4e7WV7G4i/images/main_avatar.477e86ebd412a43c521d871725e0620c.svg);
+  }

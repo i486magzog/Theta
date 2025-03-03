@@ -1,0 +1,295 @@
+section {
+  width: 100%;
+  z-index: 11;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+  background: var(--black);
+  z-index: 15;
+}
+
+.container {
+  max-width: 1920px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  position: relative;
+  width: 33%;
+  text-align: left;
+  padding-top: 45px;
+}
+
+p {
+  color: var(--white);
+  opacity: 0.85;
+}
+
+.dots {
+  transform: translate3d(0px, -68.2503px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  background-image: url(https://cdn.prod.website-files.com/60fa9ed33ad004f9b8043979/60fe42b08e13d91fc59acfb6_dot-white.svg);
+  background-position: 0 0;
+  background-size: 15px 15px;
+}
+  .dots.cs-dots {
+    opacity: .07;
+    width: 370px;
+    height: 190px;
+    position: absolute;
+    top: 68px;
+    left: -153px;
+  }
+
+.right {
+  width: 71%;
+/*  float: left;*/
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  transform: translateX(7%);
+}
+
+.swiper-frame {
+  margin-bottom: -150px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  right: -200px;
+  position: relative;
+}
+
+.border {
+  border-style: solid none solid solid;
+  border-width: 1px;
+  border-color: var(--theta-red);
+  border-radius: 3rem 0 0 3rem;
+  width: 105%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+}
+
+.swiper-holder {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+swiper-slide {
+  width: 343.929px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  flex: 1 0 auto;
+  height: auto;
+  padding: 2rem 1rem;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+
+  swiper-slide > a {
+    background-color: var(--theta-red);
+    color: var(--white);
+    border-radius: 2rem;
+    flex-direction: column;
+    height: 100%;
+    min-height: 320px;
+    max-width: 100%;
+    padding: 1rem 1rem 0;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 30px #0e212b4d;
+  }
+
+.card-underlay {
+  background-color: var(--theta-red);
+  opacity: .95;
+  border-radius: 1.2rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-holder {
+  border-radius: 1.2rem;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+  .img-holder img {
+    z-index: 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+    transition: all .2s;
+  }
+  swiper-slide > a:hover img {
+    opacity: 0.7;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.03, 1.03, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+.card-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.5rem 1rem 3rem;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.logo-holder {
+  z-index: 3;
+  background-color: var(--white);
+  border-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  margin-top: -26px;
+  padding: .5rem;
+  display: block;
+  position: absolute;
+  top: -3.5rem;
+  left: 1rem;
+  box-shadow: 0 7px 40px #0000000f;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all .2s;
+}
+
+swiper-slide > a:hover .logo-holder {
+  transform: translate3d(0px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+img.card-log {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.right h5 {
+  backface-visibility: hidden;
+  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.right h4 {
+  text-align: left;
+  margin-top: 5px;
+  font-weight: 400;
+  backface-visibility: hidden;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+swiper-slide .arrow-holder {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  overflow: hidden;
+}
+
+swiper-slide .arrow-icon {
+  font-size: .6em;
+  padding: 5px;
+  font-family: Icomoon, Arial, sans-serif;
+  opacity: 0;
+  transform: translate3d(-20%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all .2s;
+}
+swiper-slide > a:hover .arrow-icon {
+  opacity: 1;
+  transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+.swiper-controls {
+  flex-direction: column;
+  inset: 50% auto auto -5%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background-color: var(--black);
+  border: 2px solid #ec393b80;
+  border-radius: 1.2rem;
+  padding: 1rem 1rem 1rem 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.swiper-control {
+  user-select: none;
+  cursor: pointer;
+  padding: .6rem 1rem;
+  transition: all .2s;
+  margin-left: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: static;
+  transform: none;
+  box-shadow: 0 5px 36px #181d208c;
+  z-index: 20;
+  background-color: var(--theta-red);
+  opacity: 1;
+  color: var(--white);
+  border-radius: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2.2rem;
+  display: flex;
+  top: 50%;
+  height: 67px;
+}
+
+.control-icon {
+  font-size: 1em;
+  font-family: Icomoon, Arial, sans-serif;
+}

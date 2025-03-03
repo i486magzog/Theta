@@ -8,7 +8,7 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\theta.client\browser\</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\app\home\" />
-    <Folder Include="src\assets\" />
+    <None Remove="src\assets\**" />
+    <TypeScriptConfiguration Remove="src\assets\**" />
   </ItemGroup>
 </Project>
