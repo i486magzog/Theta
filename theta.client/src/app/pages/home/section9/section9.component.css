@@ -75,9 +75,9 @@ a.arrow-link {
 }
 
 .arrow-holder {
-  position: absolute;
+/*  position: absolute;
   bottom: 1rem;
-  right: 1rem;
+  right: 1rem;*/
   overflow: hidden;
 }
 
