@@ -26,6 +26,32 @@ section {
   width: 50%;
   text-align: left;
   padding-left: 80px;
+  position: relative;
+}
+
+.outline-text {
+  /* transform: translate3d(0px, -3.90208px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
+  transform-style: preserve-3d;
+  z-index: -1;
+  opacity: .3;
+  position: absolute;
+  top: -70px;
+  left: -20px;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-color: #0e212b;
+  font-weight: bold;
+
+  user-select: none !important;
+  pointer-events: none !important;
+  background-color: #0000;
+}
+
+.background-text {
+  font-size: 13rem;
+  font-weight: 800;
+  color: #0e212b;
 }
 
 .img-secondary1 {

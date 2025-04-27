@@ -24,9 +24,9 @@ export class Section9Component implements OnInit, AfterViewInit, OnDestroy {
    //this.inView.emit(isInView);
 
    if (isInView) {
-     console.log("IN");
+    console.log("IN");
    } else {
-     console.log("OUT");
+    console.log("OUT");
    }
   }
 
