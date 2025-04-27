@@ -16,6 +16,8 @@ section {
   font-size: 1em;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin: 0 auto;
 }
 
 .title-container {

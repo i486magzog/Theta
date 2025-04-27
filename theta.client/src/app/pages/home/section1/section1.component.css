@@ -14,6 +14,8 @@ section {
   font-size: 1em;
   display: flex;
   flex-direction: row;
+  position: relative;
+  margin: 0 auto;
 }
 
 .container > .left {
@@ -111,7 +113,7 @@ swiper-container.top {
   margin-right: 10px;
   opacity: 1;
   color: var(--theta-red);
-  
+
   transform: translateZ(0);
   backface-visibility: hidden;
   cursor: pointer;
@@ -143,7 +145,7 @@ swiper-container.top {
   line-height: 1.2;
   margin-bottom: 10px;
   font-size: 1.7rem;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 swiper-container.solutions {
@@ -186,7 +188,7 @@ swiper-container.solutions swiper-slide {
 }
 
   swiper-container.solutions swiper-slide.swiper-slide-active {
-    
+
   }
 
 swiper-container.solutions .solution-slide-content {

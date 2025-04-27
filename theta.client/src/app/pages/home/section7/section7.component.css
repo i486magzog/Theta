@@ -13,6 +13,8 @@ section {
   font-size: 1em;
   display: flex;
   flex-direction: row;
+  position: relative;
+  margin: 0 auto;
 }
 
 .left {
