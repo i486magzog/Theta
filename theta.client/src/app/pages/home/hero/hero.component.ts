@@ -7,7 +7,9 @@ import { Swiper } from 'swiper/types';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: []
 })
+
 export class HeroComponent implements AfterViewInit {
   index = 0;
 
@@ -27,12 +29,5 @@ export class HeroComponent implements AfterViewInit {
     swiper.slidePrev();
   }
 
-  ngAfterViewInit() {
-    //const video: HTMLVideoElement|null = document.querySelector('.bg-video video');
-    //if (video) {
-    //  video.play().catch(error => {
-    //    console.error('Error attempting to play video:', error);
-    //  });
-    //}
-  }
+  ngAfterViewInit() {}
 }
