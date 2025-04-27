@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
+import { IntersectionDirective } from './directives/intersection.directive';
 
 @NgModule({
   // 현재 애플리케이션에서 사용할 컴포넌트 목록
@@ -19,6 +20,7 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    IntersectionDirective,
   ],
   // 서비스 제공자
   providers: [],
