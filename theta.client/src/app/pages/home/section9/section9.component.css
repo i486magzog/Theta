@@ -32,10 +32,17 @@
   -webkit-text-stroke-width: .3px;
   -webkit-text-stroke-color: #0e212b;
   font-weight: bold;
-  
+
   user-select: none !important;
   pointer-events: none !important;
   background-color: #0000;
+}
+
+.background-text {
+  font-size: 13rem;
+  font-weight: 800;
+  color: #0e212b;
+  text-align: center;
 }
 
 .title {

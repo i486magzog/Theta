@@ -1,8 +1,11 @@
-<div class="section">
+<div class="section"
+  appIntersection
+  (inView)="handleInView($event)"
+>
   <div class="container">
 
     <div class="outline-text">
-      <div class="display-xl fw-black">Featured</div>
+      <div class="background-text">Featured</div>
     </div>
 
     <div class="title">
