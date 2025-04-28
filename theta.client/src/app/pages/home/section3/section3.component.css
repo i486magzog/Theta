@@ -35,7 +35,7 @@ section {
   z-index: -1;
   opacity: .3;
   position: absolute;
-  top: -70px;
+  top: 100px;
   left: -20px;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -55,12 +55,11 @@ section {
 }
 
 .img-secondary1 {
-  transform: translate3d(0px, -11.4215px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   width: 260px;
   z-index: 5;
   position: absolute;
-  bottom: -49px;
+  bottom: -60px;
   right: 28px;
   box-shadow: 0 5px 36px #0e212b2e;
   border-radius: 1.2rem;
@@ -73,7 +72,7 @@ section {
   z-index: 5;
   width: 260px;
   position: absolute;
-  top: -64px;
+  top: 30px;
   left: 10px;
   box-shadow: 0 5px 36px #0e212b2e;
   border-radius: 1.2rem;
@@ -89,4 +88,10 @@ section {
   position: relative;
   border-radius: 1.2rem;
   display: block;
+}
+
+
+[parallax] {
+  transition: transform .7s linear;
+  will-change: transform;
 }

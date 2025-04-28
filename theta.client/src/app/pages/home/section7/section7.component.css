@@ -52,6 +52,7 @@ section {
     text-decoration: none;
     display: inline-block;
     border-radius: 1.2rem;
+    background: #ffffff;
   }
 
     .card a:hover {

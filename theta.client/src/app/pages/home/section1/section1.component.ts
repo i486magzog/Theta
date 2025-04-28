@@ -1,5 +1,6 @@
-import { Component, ElementRef, QueryList, ViewChildren, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, OnDestroy, OnInit } from '@angular/core';
 import { Swiper } from 'swiper/types';
+import { ParallaxScrollService } from '../../../services/parallax.scroll.service';
 
 @Component({
   selector: 'app-section1',
@@ -7,8 +8,9 @@ import { Swiper } from 'swiper/types';
   templateUrl: './section1.component.html',
   styleUrl: './section1.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [ParallaxScrollService]
 })
-export class Section1Component  {
+export class Section1Component implements OnInit, AfterViewInit, OnDestroy {
   @ViewChildren('swiper')
   swiperRefs!: QueryList<ElementRef>;
   swiper!: Swiper;
@@ -17,12 +19,20 @@ export class Section1Component  {
   swiper2Refs!: QueryList<ElementRef>;
   swiper2!: Swiper;
 
+  constructor(
+    private parallaxService: ParallaxScrollService,
+    private elRef: ElementRef
+  ) {}
+
   ngAfterViewInit() {
     this.swiperRefs.changes.subscribe(() => { this.initializeSwiper(); });
     this.initializeSwiper();
 
     this.swiper2Refs.changes.subscribe(() => { this.initializeSwiper2(); });
     this.initializeSwiper2();
+
+    const parentElement = this.elRef.nativeElement; // 👈 이게 현재 컴포넌트의 최상위 element
+    this.parallaxService.initParallax(parentElement, []);
   }
 
   initializeSwiper() {
@@ -51,5 +61,11 @@ export class Section1Component  {
     this.slideToIndexSwiper2(swiperInstance.activeIndex);
     // loop: true 사용 시는 realIndex 도 확인 가능
     // console.log('실제 데이터 인덱스:', swiperInstance.realIndex);
+  }
+
+  ngOnInit() {}
+
+  ngOnDestroy(): void {
+    this.parallaxService.destroy();
   }
 }

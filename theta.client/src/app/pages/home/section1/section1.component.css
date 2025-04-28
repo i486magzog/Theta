@@ -21,6 +21,7 @@ section {
 .container > .left {
   width: 33%;
   text-align: left;
+  margin: auto 0;
 }
 
 .container > .right {
@@ -38,7 +39,7 @@ section {
   z-index: -1;
   opacity: .3;
   position: absolute;
-  top: -70px;
+  top: 80px;
   left: 115px;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -69,7 +70,6 @@ section {
   padding-bottom: 2rem;
   right: -200px;
   position: relative;
-  overflow: hidden;
 }
 
 .frame {

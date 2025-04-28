@@ -55,11 +55,11 @@ img.hero-logo-outline {
   max-width: 100%;
   display: inline-block;
   z-index: 5;
+  height: 100%;
 }
 
 .outline-text.white-outline {
   will-change: transform;
-  transform: translate3d(20.01px, -22.2575px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   background-color: #0000;
   font-weight: bold;
@@ -82,6 +82,8 @@ img.hero-logo-outline {
 }
 
 .hero-est-text {
+  bottom: 150px;
+  left: 50px;
 }
 
 .display-2 {
@@ -90,7 +92,7 @@ img.hero-logo-outline {
 }
 
 .display-xl {
-  font-size: 10rem;
+  font-size: 13rem;
   font-weight: 900;
 }
 
@@ -262,13 +264,13 @@ img.hero-logo-outline {
 
 .swiper-holder {
   opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   padding-top: 5px;
   padding-bottom: 2rem;
   right: -200px;
   position: relative;
   color: var(--white);
+  height: 42rem;
 }
 
 .swiper-controls {
@@ -278,7 +280,7 @@ img.hero-logo-outline {
   border-radius: 1.2rem;
   padding: 1rem 1rem 1rem 0;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   right: 50%;
   transform: translate(50%, 50%);
   justify-content: center;
@@ -334,7 +336,6 @@ img.hero-logo-outline {
 }
 
 .hero-dots {
-  transform: translate3d(14.9928px, -14.8323px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   opacity: .06;
   position: absolute;
@@ -348,7 +349,6 @@ img.hero-logo-outline {
 }
 
 .hero-swiper-frame {
-  transform: translate3d(24.994px, -9.8882px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -362,13 +362,14 @@ img.hero-logo-outline {
 }
 
 swiper-container {
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   display: block;
   padding-top: 3rem;
   padding-bottom: 3rem;
   overflow: hidden;
+  margin-top: 90px;
 }
+
 
 .swiper-wrapper {
   transition-duration: 0ms;
@@ -550,4 +551,9 @@ a.card:hover .card-title {
 a.card:hover .icon.arrow-icon {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+[parallax-mouse] {
+  transition: transform .5s linear;
+  will-change: transform;
 }

@@ -20,12 +20,11 @@
 }
 
 .outline-text {
-  transform: translate3d(0px, 14.2192%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   z-index: -1;
   opacity: .3;
   position: absolute;
-  top: -74px;
+  top: 10px;
   right: 0;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -157,8 +156,11 @@ img.blog-thumb {
   border: 0;
 }
 
+.blog-list {
+  padding-top: 2rem;
+}
+
 .blog-card-content {
-  transform: translate3d(0px, 7.4295%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   max-width: 720px;
   z-index: 3;
@@ -170,6 +172,7 @@ img.blog-thumb {
   box-shadow: 0 3px 26px #0e212b12;
   flex: 1;
   text-align: left;
+  top: 5rem;
 }
 
 h4 {

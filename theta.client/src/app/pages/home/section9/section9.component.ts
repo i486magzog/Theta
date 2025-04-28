@@ -1,44 +1,23 @@
-import { Component, EventEmitter, Output, ElementRef, AfterViewInit, OnDestroy, OnInit } from '@angular/core';
-
+import { Component, AfterViewInit, OnDestroy, OnInit } from '@angular/core';
+import { ParallaxScrollService } from '../../../services/parallax.scroll.service';
 @Component({
   selector: 'app-section9',
   standalone: false,
   templateUrl: './section9.component.html',
-  styleUrl: './section9.component.css'
+  styleUrl: './section9.component.css',
+  providers: [ParallaxScrollService]
 })
 
 export class Section9Component implements OnInit, AfterViewInit, OnDestroy {
-  constructor(private el: ElementRef) { }
 
-  ngOnInit() {
-  }
+  constructor(private parallaxService: ParallaxScrollService) {}
+  ngOnInit() {}
 
   ngAfterViewInit() {
-    window.addEventListener('scroll', this.onScroll.bind(this));
-  }
-
-  onScroll(event: Event) {
-   const target = this.el.nativeElement;
-   const rect = target.getBoundingClientRect();
-    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
-   //this.inView.emit(isInView);
-
-   if (isInView) {
-    console.log("IN");
-   } else {
-    console.log("OUT");
-   }
-  }
-
-  handleInView(isVisible: boolean) {
-    if (isVisible) {
-      console.log('Visible');
-    } else {
-      console.log('Not Visible');
-    }
+    this.parallaxService.initParallax('.section', []);
   }
 
   ngOnDestroy(): void {
-
+    this.parallaxService.destroy();
   }
 }

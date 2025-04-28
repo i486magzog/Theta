@@ -180,7 +180,6 @@ p {
 }
 
 .icon.arrow-icon {
-  padding: 5px;
   font-size: .8em;
 }
 
@@ -201,4 +200,14 @@ img {
   vertical-align: middle;
   max-width: 100%;
   display: inline-block;
+}
+
+[parallax] {
+  transition: transform .8s linear;
+  will-change: transform;
+}
+
+[parallax-mouse] {
+  transition: transform 1s linear;
+  will-change: transform;
 }
