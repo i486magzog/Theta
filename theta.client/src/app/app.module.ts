@@ -5,14 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
+// import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
 import { IntersectionDirective } from './directives/intersection.directive';
+import { NavigationMenuModule } from './components/navigation-menu/navigation-menu.module';
 
 @NgModule({
   // 현재 애플리케이션에서 사용할 컴포넌트 목록
   declarations: [
     AppComponent,
-    NavigationMenuComponent,
+    // NavigationMenuComponent,
     FooterComponent,
   ],
   // Angular 모듈을 가져오는 곳
@@ -21,6 +22,7 @@ import { IntersectionDirective } from './directives/intersection.directive';
     HttpClientModule,
     AppRoutingModule,
     IntersectionDirective,
+    NavigationMenuModule,
   ],
   // 서비스 제공자
   providers: [],

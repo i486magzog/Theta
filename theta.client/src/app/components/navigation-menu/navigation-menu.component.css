@@ -1,6 +1,6 @@
 /* Nav */
 .navbar {
-  position: sticky;
+  position: fixed;
   z-index: 100;
   background-color: var(--black);
   justify-content: space-between;
